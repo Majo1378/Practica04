@@ -1,0 +1,13 @@
+
+@model EF_core_master.Models.Persona
+
+<h2>Editar Persona</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <label>Nombre:</label>
+    <input asp-for="Nombre" class="form-control" />
+    <label>Edad:</label>
+    <input asp-for="Edad" class="form-control" />
+    <button class="btn btn-success mt-2">Guardar</button>
+</form>

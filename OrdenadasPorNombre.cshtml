@@ -1,0 +1,11 @@
+
+@model List<EF_core_master.Models.Persona>
+
+<h2>Personas Ordenadas por Nombre</h2>
+
+<table class="table">
+<tr><th>Nombre</th><th>Edad</th></tr>
+@foreach (var p in Model){
+<tr><td>@p.Nombre</td><td>@p.Edad</td></tr>
+}
+</table>
